@@ -1,100 +1,200 @@
-# Counter Plugin (Angular + React + Vanilla JS)
+# 🚀 Counter Plugin (Angular + React + Vanilla JS)
 
-A lightweight, customizable animated counter component for **Angular**, **React**, and **Vanilla JS**.  
-Perfect for dashboards, stats, and engaging UI elements.
+[![npm version](https://img.shields.io/npm/v/@nawazaideveloperr/counter-plugin)](https://www.npmjs.com/package/@nawazaideveloperr/counter-plugin)
+[![npm downloads](https://img.shields.io/npm/dt/@nawazaideveloperr/counter-plugin)](https://www.npmjs.com/package/@nawazaideveloperr/counter-plugin)
+[![GitHub stars](https://img.shields.io/github/stars/devloper2017/counter-plugin)](https://github.com/devloper2017/counter-plugin)
+[![GitHub issues](https://img.shields.io/github/issues/devloper2017/counter-plugin)](https://github.com/devloper2017/counter-plugin/issues)
+[![License](https://img.shields.io/github/license/devloper2017/counter-plugin)](https://github.com/devloper2017/counter-plugin)
 
-Easily add step-based counting with customizable inputs: `start`, `end`, `step`, and `timer`.
+A lightweight **animated counter component** for **Angular**, **React**, and **Vanilla JavaScript**.
+
+Perfect for **dashboards, statistics, analytics, and engaging UI counters**.
 
 ---
 
-## 📦 Installation
+# ✨ Features
+
+- ⚡ Lightweight and fast
+- 🧩 Works with **Angular**
+- ⚛️ Works with **React**
+- 🌐 Works with **Vanilla JavaScript**
+- 🔧 Fully customizable
+- 🎯 Easy to integrate
+
+---
+
+# 📦 Installation
+
+Install the package using **npm**.
 
 ```bash
 npm install @nawazaideveloperr/counter-plugin
+```
 
-🔖 Badges
-https://img.shields.io/npm/v/@nawazaideveloperr/counter-plugin
-https://img.shields.io/npm/dt/@nawazaideveloperr/counter-plugin
-https://img.shields.io/github/stars/devloper2017/counter-plugin
-https://img.shields.io/github/issues/devloper2017/counter-plugin
-https://img.shields.io/github/license/devloper2017/counter-plugin
+---
 
-🚀 Usage
+# 🚀 Usage
 
-Angular
-// app.module.ts
+---
+
+# Angular
+
+## Step 1: Import Module
+
+```ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CounterModule } from '@nawazaideveloperr/counter-plugin';
 
 @NgModule({
-  imports: [BrowserModule, CounterModule],
-  bootstrap: [AppComponent]
+  imports: [
+    BrowserModule,
+    CounterModule
+  ]
 })
 export class AppModule {}
+```
 
-<lib-counter [start]="0" [end]="1000" [timer]="2000" [step]="2"></lib-counter>
+---
 
-In Angular Leatest Version Directly Import In Componant With Standalone
+## Step 2: Use Component
 
+```html
+<lib-counter
+  [start]="0"
+  [end]="1000"
+  [timer]="2000"
+  [step]="2">
+</lib-counter>
+```
 
-React
-import React from 'react';
-import { Counter } from '@nawazaideveloperr/counter-plugin';
+---
+
+## Angular Standalone Component
+
+For latest Angular versions you can import the module directly inside the component.
+
+```ts
+import { CounterModule } from '@nawazaideveloperr/counter-plugin';
+```
+
+---
+
+# React
+
+## Example
+
+```jsx
+import React from "react";
+import { Counter } from "@nawazaideveloperr/counter-plugin";
 
 function App() {
   return (
     <div>
       <h1>Visitors</h1>
-      <Counter start={0} end={500} timer={1500} step={5} />
+
+      <Counter
+        start={0}
+        end={500}
+        timer={1500}
+        step={5}
+      />
+
     </div>
   );
 }
 
 export default App;
+```
 
+---
 
-Vanilla JS
+# Vanilla JavaScript
+
+## Example
+
+```html
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Counter Demo</title>
-  <script src="node_modules/@nawazaideveloperr/counter-plugin/dist/counter-plugin.umd.js"></script>
-</head>
-<body>
-  <h1 id="counter"></h1>
 
-  <script>
-    const counter = new Counter({
-      element: document.getElementById('counter'),
-      start: 0,
-      end: 300,
-      timer: 2000,
-      step: 10
-    });
-    counter.start();
-  </script>
+  <script src="node_modules/@nawazaideveloperr/counter-plugin/dist/counter-plugin.umd.js"></script>
+
+</head>
+
+<body>
+
+<h1 id="counter"></h1>
+
+<script>
+
+const counter = new Counter({
+  element: document.getElementById("counter"),
+  start: 0,
+  end: 300,
+  timer: 2000,
+  step: 10
+});
+
+counter.start();
+
+</script>
+
 </body>
 </html>
+```
 
+---
+
+# ⚙️ Props
+
+| Prop | Type | Default | Description |
+|-----|-----|-----|-----|
+| start | number | 0 | Starting number of the counter |
+| end | number | 1000 | Ending number of the counter |
+| timer | number | 1000 | Animation duration in milliseconds |
+| step | number | 5 | Increment step size |
+
+---
+
+# 🎯 Example
+
+```html
+<lib-counter
+  [start]="100"
+  [end]="2000"
+  [timer]="3000"
+  [step]="10">
+</lib-counter>
+```
+
+---
+
+# 💡 Use Cases
+
+- Dashboard statistics
+- Visitor counters
+- Sales analytics
+- Animated UI metrics
+- Growth numbers
+
+---
+
+# 📄 License
  
-# **Prop - start**
-Type - number
-Default - 0
-Description - Starting number of the counter
+MIT License @[https://github.com/devloper2017/](https://github.com/devloper2017/)
 
-# **Prop - end**
-Type - number
-Default - 1000
-Description - Ending number of the counter
+---
 
-# **Prop - timer**
-Type - number
-Default - 1000
-Description - Animation duration in milliseconds
+# ⭐ Support
 
-# **Prop - step**
-Type - number
-Default - 5
-Description - Increment step size (auto‑calculated)
+If you like this project, please **star the repository** on GitHub.
 
+---
+
+# 🤝 Contributing
+
+Pull requests are welcome.  
+If you find a bug or want to improve the plugin, feel free to open an issue.
