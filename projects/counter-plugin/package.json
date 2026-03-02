@@ -1,6 +1,6 @@
 {
   "name": "@nawazaideveloperr/counter-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A lightweight animated counter plugin for Angular, React, and Vanilla JS.",
   "author": "Nawaz",
   "license": "MIT",
