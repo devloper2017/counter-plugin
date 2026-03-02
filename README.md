@@ -4,6 +4,8 @@ A lightweight **animated counter component** for **Angular**, **React**, and **V
 
 Perfect for **dashboards, statistics, analytics, and engaging UI counters**.
 
+Easily add step-based counting with customizable inputs: `start`, `end`, `step`, and `timer`.
+
 ---
 
 # ✨ Features
