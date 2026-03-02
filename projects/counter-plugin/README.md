@@ -1,27 +1,27 @@
 # Counter Plugin (Angular + React + Vanilla JS)
 
-A lightweight, animated counter plugin built with TypeScript.  
-Supports Angular, React, and plain JavaScript websites.  
+A lightweight, customizable animated counter component for **Angular**, **React**, and **Vanilla JS**.  
+Perfect for dashboards, stats, and engaging UI elements.
+
 Easily add step-based counting with customizable inputs: `start`, `end`, `step`, and `timer`.
 
 ---
 
-## 🚀 Installation
+## 📦 Installation
 
 ```bash
-npm install counter-plugin
+npm install @nawazaideveloperr/counter-plugin
 
-# Counter Plugin (Angular + React + Vanilla JS)
+🔖 Badges
+https://img.shields.io/npm/v/@nawazaideveloperr/counter-plugin
+https://img.shields.io/npm/dt/@nawazaideveloperr/counter-plugin
+https://img.shields.io/github/stars/devloper2017/counter-plugin
+https://img.shields.io/github/issues/devloper2017/counter-plugin
+https://img.shields.io/github/license/devloper2017/counter-plugin
 
-![npm version](https://img.shields.io/npm/v/counter-plugin)
-![npm downloads](https://img.shields.io/npm/dt/counter-plugin)
-![GitHub stars](https://img.shields.io/github/stars/devloper2017/counter-plugin)
-![GitHub issues](https://img.shields.io/github/issues/devloper2017/counter-plugin)
-![GitHub license](https://img.shields.io/github/license/devloper2017/counter-plugin)
+🚀 Usage
 
-
-for Angular
-
+Angular
 // app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -33,12 +33,12 @@ import { CounterModule } from '@nawazaideveloperr/counter-plugin';
 })
 export class AppModule {}
 
-
 <lib-counter [start]="0" [end]="1000" [timer]="2000" [step]="2"></lib-counter>
 
+In Angular Leatest Version Directly Import In Componant With Standalone
 
-for React
 
+React
 import React from 'react';
 import { Counter } from '@nawazaideveloperr/counter-plugin';
 
@@ -54,8 +54,7 @@ function App() {
 export default App;
 
 
-for Vanilla JS
-
+Vanilla JS
 <!DOCTYPE html>
 <html>
 <head>
@@ -71,19 +70,31 @@ for Vanilla JS
       start: 0,
       end: 300,
       timer: 2000,
-      step:10
+      step: 10
     });
     counter.start();
   </script>
 </body>
 </html>
 
+ 
+# **Prop - start**
+Type - number
+Default - 0
+Description - Starting number of the counter
 
-## ⚙️ Options
+# **Prop - end**
+Type - number
+Default - 1000
+Description - Ending number of the counter
 
-| Prop       | Type    | Default | Description                          |
-|------------|---------|---------|--------------------------------------|
-| `start`    | number  | 0       | Starting number of the counter       |
-| `end`      | number  | 100     | Ending number of the counter         |
-| `timer` | number  | 2000    | Animation duration in milliseconds   |
-| `step`     | number  | auto    | Increment step size (calculated auto)|
+# **Prop - timer**
+Type - number
+Default - 1000
+Description - Animation duration in milliseconds
+
+# **Prop - step**
+Type - number
+Default - 5
+Description - Increment step size (auto‑calculated)
+
