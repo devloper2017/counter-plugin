@@ -1,11 +1,5 @@
 # 🚀 Counter Plugin (Angular + React + Vanilla JS)
 
-[![npm version](https://img.shields.io/npm/v/@nawazaideveloperr/counter-plugin)](https://www.npmjs.com/package/@nawazaideveloperr/counter-plugin)
-[![npm downloads](https://img.shields.io/npm/dt/@nawazaideveloperr/counter-plugin)](https://www.npmjs.com/package/@nawazaideveloperr/counter-plugin)
-[![GitHub stars](https://img.shields.io/github/stars/devloper2017/counter-plugin)](https://github.com/devloper2017/counter-plugin)
-[![GitHub issues](https://img.shields.io/github/issues/devloper2017/counter-plugin)](https://github.com/devloper2017/counter-plugin/issues)
-[![License](https://img.shields.io/github/license/devloper2017/counter-plugin)](https://github.com/devloper2017/counter-plugin)
-
 A lightweight **animated counter component** for **Angular**, **React**, and **Vanilla JavaScript**.
 
 Perfect for **dashboards, statistics, analytics, and engaging UI counters**.
@@ -92,14 +86,12 @@ function App() {
   return (
     <div>
       <h1>Visitors</h1>
-
       <Counter
         start={0}
         end={500}
         timer={1500}
         step={5}
       />
-
     </div>
   );
 }
@@ -116,18 +108,12 @@ export default App;
 ```html
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Counter Demo</title>
-
   <script src="node_modules/@nawazaideveloperr/counter-plugin/dist/counter-plugin.umd.js"></script>
-
 </head>
-
 <body>
-
 <h1 id="counter"></h1>
-
 <script>
 
 const counter = new Counter({
@@ -139,9 +125,7 @@ const counter = new Counter({
 });
 
 counter.start();
-
 </script>
-
 </body>
 </html>
 ```
@@ -188,9 +172,11 @@ MIT License @[https://github.com/devloper2017/](https://github.com/devloper2017/
 
 ---
 
-# ⭐ Support
+## ⭐ Support
 
 If you like this project, please **star the repository** on GitHub.
+
+[Click here to ⭐ star the repository](https://github.com/devloper2017/counter-plugin)
 
 ---
 
