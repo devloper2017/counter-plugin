@@ -3,5 +3,9 @@
   "dest": "../../dist/counter-plugin",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": [
+    "README.md",
+    "package.json"
+  ]
 }

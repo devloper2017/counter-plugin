@@ -1,7 +1,7 @@
 {
-  "name": "counter-plugin",
+  "name": "@nawazaideveloperr/counter-plugin",
   "version": "0.0.1",
-  "description": "A lightweight animated counter plugin for Angular, React, and Vanilla JS. Supports start, end, step, and timer inputs.",
+  "description": "A lightweight animated counter plugin for Angular, React, and Vanilla JS.",
   "author": "Nawaz",
   "license": "MIT",
   "peerDependencies": {
@@ -20,12 +20,6 @@
     "npm counter library",
     "vanilla js counter",
     "frontend utility",
-    "cross framework plugin",
-    "step counter",
-    "timer counter",
-    "lightweight counter",
-    "angular library",
-    "react component",
-    "frontend plugin"
+    "cross framework plugin"
   ]
 }
