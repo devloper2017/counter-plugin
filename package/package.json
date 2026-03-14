@@ -1,0 +1,23 @@
+{
+  "name": "@nawazaideveloperr/counter-plugin",
+  "version": "0.0.6",
+  "description": "Counter plugin for Angular, React and Vanilla JS",
+  "type": "module",
+  "author": "Nawaz",
+  "license": "MIT",
+  "main": "./dist/counter-elements/main.js",
+  "exports": {
+    ".": "./dist/counter-elements/main.js",
+    "./angular": "./dist/counter-plugin/public-api.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^19.2.0",
+    "@angular/core": "^19.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

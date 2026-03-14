@@ -1,27 +1,27 @@
-# 🚀 Counter Plugin (Angular + React + Vanilla JS)
+# 🚀 Counter Plugin (Angular)
 
-A lightweight **animated counter component** for **Angular**, **React**, and **Vanilla JavaScript**.
+A lightweight **animated counter component for Angular**.
 
-Perfect for **dashboards, statistics, analytics, and engaging UI counters**.
+Perfect for **dashboards, statistics cards, analytics panels, and animated UI metrics**.
 
-Easily add step-based counting with customizable inputs: `start`, `end`, `step`, and `timer`.
+The plugin supports customizable inputs like **start**, **end**, **step**, **timer**, and also **prefix**, **suffix**, and **once** for flexible UI counters.
 
 ---
 
 # ✨ Features
 
-- ⚡ Lightweight and fast
-- 🧩 Works with **Angular**
-- ⚛️ Works with **React**
-- 🌐 Works with **Vanilla JavaScript**
-- 🔧 Fully customizable
-- 🎯 Easy to integrate
+* ⚡ Lightweight and fast
+* 🧩 Built for **Angular**
+* 🔧 Fully customizable inputs
+* 🎯 Smooth animated number counting
+* 🔁 Optional repeat animation
+* 🧮 Supports prefix and suffix formatting
 
 ---
 
 # 📦 Installation
 
-Install the package using **npm**.
+Install the package using **npm**:
 
 ```bash
 npm install @nawazaideveloperr/counter-plugin
@@ -66,123 +66,159 @@ export class AppModule {}
 
 ---
 
-## Angular Standalone Component
+# Angular Standalone Component
 
-For latest Angular versions you can import the module directly inside the component.
+For **Angular 15+ standalone components**, you can import the module directly inside the component.
 
 ```ts
+import { Component } from '@angular/core';
 import { CounterModule } from '@nawazaideveloperr/counter-plugin';
+
+@Component({
+  selector: 'app-home',
+  standalone: true,
+  imports: [CounterModule],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss',
+})
+export class HomeComponent {}
 ```
 
 ---
 
-# React
+# ⚙️ Inputs / Props
 
-## Example
-
-```jsx
-import React from "react";
-import { Counter } from "@nawazaideveloperr/counter-plugin";
-
-function App() {
-  return (
-    <div>
-      <h1>Visitors</h1>
-      <Counter
-        start={0}
-        end={500}
-        timer={1500}
-        step={5}
-      />
-    </div>
-  );
-}
-
-export default App;
-```
+| Input  | Type    | Default | Description                                                              |
+| ------ | ------- | ------- | ------------------------------------------------------------------------ |
+| start  | number  | 0       | Starting number of the counter                                           |
+| end    | number  | 1000    | Ending number of the counter                                             |
+| timer  | number  | 1000    | Animation duration in milliseconds                                       |
+| step   | number  | 5       | Increment step size                                                      |
+| prefix | string  | ""      | Text displayed before the number (example: `$`)                          |
+| suffix | string  | ""      | Text displayed after the number (example: `+`, `%`)                      |
+| once   | boolean | true    | If true, counter runs only once. If false, it can trigger multiple times |
 
 ---
 
-# Vanilla JavaScript
+# 🎯 Examples
 
-## Example
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Counter Demo</title>
-  <script src="node_modules/@nawazaideveloperr/counter-plugin/dist/counter-plugin.umd.js"></script>
-</head>
-<body>
-<h1 id="counter"></h1>
-<script>
-
-const counter = new Counter({
-  element: document.getElementById("counter"),
-  start: 0,
-  end: 300,
-  timer: 2000,
-  step: 10
-});
-
-counter.start();
-</script>
-</body>
-</html>
-```
-
----
-
-# ⚙️ Props
-
-| Prop | Type | Default | Description |
-|-----|-----|-----|-----|
-| start | number | 0 | Starting number of the counter |
-| end | number | 1000 | Ending number of the counter |
-| timer | number | 1000 | Animation duration in milliseconds |
-| step | number | 5 | Increment step size |
-
----
-
-# 🎯 Example
+## Basic Counter
 
 ```html
 <lib-counter
-  [start]="100"
-  [end]="2000"
-  [timer]="3000"
-  [step]="10">
+  [start]="0"
+  [end]="500"
+  [timer]="1500"
+  [step]="5">
 </lib-counter>
 ```
 
 ---
 
+## Counter with Prefix
+
+```html
+<lib-counter
+  [start]="0"
+  [end]="10000"
+  [prefix]="'$'">
+</lib-counter>
+```
+
+Output:
+
+```
+$10000
+```
+
+---
+
+## Counter with Suffix
+
+```html
+<lib-counter
+  [start]="0"
+  [end]="100"
+  [suffix]="'%'">
+</lib-counter>
+```
+
+Output:
+
+```
+100%
+```
+
+---
+
+## Counter with Plus Sign
+
+```html
+<lib-counter
+  [start]="0"
+  [end]="5000"
+  [suffix]="'+'">
+</lib-counter>
+```
+
+Output:
+
+```
+5000+
+```
+
+---
+
+## Counter with Repeat Animation
+
+```html
+<lib-counter
+  [start]="0"
+  [end]="1000"
+  [timer]="2000"
+  [once]="false">
+</lib-counter>
+```
+
+If `once` is **false**, the counter animation can run multiple times when triggered.
+
+---
+
 # 💡 Use Cases
 
-- Dashboard statistics
-- Visitor counters
-- Sales analytics
-- Animated UI metrics
-- Growth numbers
+* Dashboard statistics
+* Website visitor counters
+* Sales analytics
+* Marketing metrics
+* Portfolio statistics
+* Growth indicators
 
 ---
 
 # 📄 License
- 
-MIT License @[https://github.com/devloper2017/](https://github.com/devloper2017/)
+
+MIT License
+
+GitHub:
+https://github.com/devloper2017/counter-plugin
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
-If you like this project, please **star the repository** on GitHub.
+If you like this project, please **give it a star ⭐ on GitHub**.
 
-[Click here to ⭐ star the repository](https://github.com/devloper2017/counter-plugin)
+👉 https://github.com/devloper2017/counter-plugin
 
 ---
 
 # 🤝 Contributing
 
-Pull requests are welcome.  
-If you find a bug or want to improve the plugin, feel free to open an issue.
+Pull requests are welcome.
+
+If you find a bug or want to improve the plugin:
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
